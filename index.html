@@ -6,200 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico|Raleway" rel="stylesheet">
-    <title>Document</title>
-    <style type="text/css">
-      html {
-        padding: 0;
-        margin: 0;
-        scroll-behavior: smooth;
-      }
-
-      body {
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-        font-family: 'Raleway', sans-serif;
-      }
-
-
-      /* header section */
-      header {
-        text-align: center;
-        background: #fff;
-        position: fixed;
-        top: 0;
-        z-index: 999;
-        width: 100%;
-        padding: .5rem;
-        border: 2px solid #c0362c;
-      }
-
-      ul.navbar {
-        font-size: 1.25rem;
-        margin: 15px auto;
-        text-transform: uppercase;
-        list-style: none;
-        display: block;
-        float: right;
-        margin-right: 15%;
-      }
-
-      li.nav-li {
-        display: inline-block;
-        padding-left: 10px;
-        }
-
-      .logo {
-        float: left;
-        font-family: 'Pacifico', cursive;
-        font-size: 1.75rem;
-        margin-left: 15%;
-        /* margin-top: 5px; */
-        color: #c0362c;
-        backface-visibility: visible;
-        transition: 0.3s;
-        transform: skew(0) scale(1);
-      }
-
-      .logo:hover {
-        transform: skew(10deg) scale(1.1);
-      }
-
-      a.nav-item {
-        text-decoration: none;
-        color: #c0362c;
-        transform: skew(0) scale(1);
-        transition: 0.6s all;
-        filter: blur(0)
-      }
-      a.nav-item:hover {
-        color: #000;
-        transform: skew(10deg) scale(1.1);
-        filter: blur(1px);
-      }
-
-      /* main section */
-
-      main {
-        background-image: url('https://images.unsplash.com/photo-1521464302861-ce943915d1c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80');
-        background-size: cover;
-        height: 100vh;
-        width: 100vw;
-    position: relative;
-      }
-
-      div.title {
-        text-align: center;
-        width: 50%;
-        display: block;
-        margin: 200px auto;
-        background-color: rgba(255,255,255,.4);
-        color: #511814;
-        position: absolute;
-        top: 10%;
-        left: 50%;
-        transform: translate(-50%, -10%);
-        border-radius: 5px;
-        }
-
-      /* div.title::after {
-        content: '';
-        position: absolute;
-        background: rgba(250,250,250,1);
-        height: 5rem;
-        width: 5rem;
-      } */
-
-      div.title h1.title-heading {
-        font-size: 4rem;
-        
-        padding-top: 25px;
-      }
-
-      div.title h3 {
-        font-size: 2.5rem;
-        padding-bottom: 25px;
-      }
-
-      .logo-title {
-        font-family: 'Pacifico', cursive;
-        color: #c0362c;
-        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-        transition: .3s all;
-        transform: scale(1);
-        }
-
-      .logo-title:hover {
-        transform: scale(1.1);
-        color: #000;
-        text-shadow: -1px -1px 0 #FD5A1E, 1px -1px 0 #FD5A1E, -1px 1px 0 #FD5A1E, 1px 1px 0 #FD5A1E;
-
-      }
-
-      .read-on {
-        text-decoration: none;
-        color: #511814;
-      }
-
-      .read-on:hover {
-        filter: blur(1px);
-      }
-
-      /* about section */
-      .about {
-        height: 100vh;
-        background-color: grey;
-        background-image: url('https://images.unsplash.com/photo-1423347673683-ccdb7f6a948f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80');
-        background-size: cover;
-        filter: grayscale(100%);
-
-      }
-
-      /* history section */
-
-      .history {
-        height: 100vh;
-        background-color: grey;
-        background-image: url('https://images.unsplash.com/photo-1553719716-2722c819ee04?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1371&q=80');
-        background-size: cover;
-      }
-
-      /* contact section */
-      .contact {
-      height: 100vh;
-        background-color: grey;
-        background-image: url('https://images.unsplash.com/photo-1522046258221-0d36711bf674?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
-        background-size: cover;
-      }
-
-      /* footer section */
-
-      footer {
-        text-align: center;
-        background: #fff;
-        /* position: absolute; */
-        bottom: 0;
-        width: 100%;
-        /* padding: .5rem; */
-        border: 2px solid #c0362c;
-      }
-
-      footer > p {
-        font-size: 1.25rem;
-      }
-
-      footer a {
-        display: inline-block;
-        color: #c0362c;
-        text-decoration: none;
-        transform: scale(1) skew(0);
-        transition: .3s;
-      }
-
-      footer a:hover {
-        transform: scale(1.1) skew(-15deg);
-      }
-    </style>
+    <title>VisitSF</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="behavior.js"></script>
   </head>
   <body>
     <header>
@@ -213,68 +22,84 @@
           </a>
         </li>
         <li class="nav-li"></li>
-          <a href="#about" class="nav-item">
+          <a href="http://54.85.162.94/about.html" class="nav-item">
             About
           </a>
         </li>
         <li class="nav-li">
-          <a href="#history" class="nav-item">
+          <a href="http://54.85.162.94/sfHistory.html" class="nav-item">
             History
           </a>
         </li>
         <li class="nav-li">
-          <a href="#contact" class="nav-item">
-            Contact
+          <a href="http://54.85.162.94/tweets.html" class="nav-item">
+            Tweets
           </a>
         </li>
       </ul>
     </header>
 
-    <main id="main">
-      <div class="title">
-        <h1 class="title-heading">
+    <main class="main-SF" id="main">
+      <div class="article-SF">
+        <h1 class="article-SF-heading">
           Come see the City by the Bay<br>
-          With <span class="logo-title">Visit SF</span>
+          With <span class="logo-title-SF">Visit SF</span>, <br>
+          a fictional travel site made for<br>
+          <span class="logo-title-SF">Holberton School</span>.
         </h1>
-        <h3><a href="#about" class="read-on">Read On</a></h3>
-        <!-- <p class="arrow">&#11015;</p> -->
+        <h3><a href="http://54.85.162.94/about.html" class="read-on">Read On</a></h3>
+        <h3>Disclaimer</h3>
+        <p>Visit SF is not responsible for stolen property</p>
+        <!-- <img src="https://images.pexels.com/photos/33250/wallet-cash-credit-card-pocket.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="small"> -->
+       
       </div>
+      <aside class="aside-SF">
+        <h2 class="aside-SF-header">
+          See What Folks are Saying...
+        </h2>
+        <p class="aside-p">About America's most unique city</p>
+        <div id="disqus_thread"></div>
+<script>
 
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://54-85-162-94-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+  <div class="aside-footer">
+    <h3 class="aside-footer-header">
+      An Unforgetable Trip...
+    </h3>
+    <p class="aside-footer-content">
+      to the city of Love
+    </p>
+  </div>
+                            
+      </aside>
+      
 
     </main>
-
-    <section class="about" id="about">
-
-      <div class="description">
-        <h1 class="about-title">
-          About Us
-        </h1>
-      </div>
-
-    </section>
-
-    <section class="history" id="history">
-
-    </section>
-
-    <section class="sites" id="sites">
-
-    </section>
-
-    <section class="lodgings" id="lodgings">
-
-    </section>
+    <footer class="footer-SF">
+      <p>Made by <a href="https://twitter.com/@josue_usselman" target="_blank">Joshua Usselman</a><br> for <a href="https://www.holbertonschool.com" target="_blank">Holberton School</a><br>
+        ✌ All rights reserved ☮ 
+      </p>
+  </footer>
 
     
 
-    <section class="contact" id="contact">
-
-    </section>
-
-    <footer>
-        <p>Made by <a href="https://twitter.com/@josue_usselman" target="_blank">Joshua Usselman</a><br> for <a href="https://www.holbertonschool.com" target="_blank">Holberton School</a><br>
-          ✌ All rights reserved ☮ 
-        </p>
-    </footer>
+    
   </body>
 </html>

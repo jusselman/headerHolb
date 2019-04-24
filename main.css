@@ -1,0 +1,259 @@
+html {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* header section */
+header {
+  text-align: center;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px solid #c0362c;
+}
+
+ul.navbar {
+  font-size: 1.25rem;
+  margin: 15px auto;
+  text-transform: uppercase;
+  list-style: none;
+  display: block;
+  float: right;
+  margin-right: 15%;
+}
+
+li.nav-li {
+  display: inline-block;
+  padding-left: 10px;
+}
+
+.logo {
+  float: left;
+  font-family: 'Pacifico', cursive;
+  font-size: 1.75rem;
+  margin-left: 15%;
+  /* margin-top: 5px; */
+  color: #c0362c;
+  backface-visibility: visible;
+  transition: 0.3s;
+  transform: skew(0) scale(1);
+}
+
+.logo:hover {
+  transform: skew(10deg) scale(1.1);
+}
+
+a.nav-item {
+  text-decoration: none;
+  color: #c0362c;
+  transform: skew(0) scale(1);
+  transition: 0.6s all;
+  filter: blur(0);
+}
+a.nav-item:hover {
+  color: #000;
+  transform: skew(10deg) scale(1.1);
+  filter: blur(1px);
+}
+
+/* main section */
+
+.main-SF {
+  background-image: url('https://images.unsplash.com/photo-1521464302861-ce943915d1c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80');
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+}
+
+.article-SF {
+  text-align: center;
+  flex: 60%;
+  margin: 200px 200px;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: #511814;
+  top: 10%;
+  border-radius: 5px;
+}
+
+.article-SF-heading {
+  font-size: 2.5rem;
+
+  padding-top: 25px;
+}
+
+article.title h3 {
+  font-size: 2rem;
+  padding-bottom: 25px;
+}
+
+.logo-title-SF {
+  font-family: 'Pacifico', cursive;
+  color: #c0362c;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  transition: 0.3s all;
+  transform: scale(1);
+}
+
+.logo-title-SF:hover {
+  transform: scale(1.1);
+  color: #000;
+  text-shadow: -1px -1px 0 #fd5a1e, 1px -1px 0 #fd5a1e, -1px 1px 0 #fd5a1e,
+    1px 1px 0 #fd5a1e;
+}
+
+.read-on {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #511814;
+}
+
+.read-on:hover {
+  filter: blur(1px);
+}
+
+.aside-SF {
+  flex: 40%;
+  width: 40%;
+  height: 100vh;
+  background-image: url('https://images.pexels.com/photos/1932266/pexels-photo-1932266.jpeg?cs=srgb&dl=architecture-houses-san-francisco-1932266.jpg&fm=jpg');
+  background-size: cover;
+}
+
+.aside-SF-header {
+  font-size: 2rem;
+  color: #000;
+  text-align: center;
+  margin-top: 10rem;
+}
+
+.aside-p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+#layout,
+.btn-default,
+.dropdown-menu .divider,
+.follow-btn,
+.post-content .post-body {
+  /* overflow: hidden; */
+  padding: 3rem;
+}
+
+.aside-footer {
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 50%;
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 50%;
+}
+
+.aside-footer-header {
+  color: #fd5a1e;
+  text-align: center;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  margin-top: 3rem;
+  font-size: 1.5rem;
+}
+
+.aside-footer-content {
+  color: #fd5a1e;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+/* about section */
+.about-SF {
+  height: 100vh;
+  background-color: grey;
+  background-image: url('https://images.unsplash.com/photo-1423347673683-ccdb7f6a948f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80');
+  background-size: cover;
+  filter: grayscale(100%);
+}
+
+.about-SF h1.about-title {
+  margin: 0 auto;
+  display: block;
+}
+
+div.description {
+  position: absolute;
+  display: block;
+  width: 50%;
+  left: 50%;
+  top: 25%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 5px;
+  text-align: center;
+}
+
+div.description h2 {
+  font-size: 3rem;
+}
+
+div.description p {
+  font-size: 2rem;
+}
+
+.arrow-container {
+  position: absolute;
+  left: 50%;
+  top: 65%;
+  transform: translateX(-50%);
+  font-size: 150px;
+}
+
+/* history section */
+
+.history {
+  height: 100vh;
+  background-color: grey;
+  background-image: url('https://images.unsplash.com/photo-1553719716-2722c819ee04?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1371&q=80');
+  background-size: cover;
+}
+
+/* footer section */
+
+.footer-SF {
+  text-align: center;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* padding: .5rem; */
+  border: 2px solid #c0362c;
+}
+
+.footer-SF > p {
+  font-size: 1.25rem;
+}
+
+.footer-SF a {
+  display: inline-block;
+  color: #c0362c;
+  text-decoration: none;
+  transform: scale(1) skew(0);
+  transition: 0.3s;
+}
+
+.footer-SF a:hover {
+  transform: scale(1.1) skew(-15deg);
+}
